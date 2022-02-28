@@ -5,7 +5,7 @@
 
 ## Getting Started
 
-`yarn add react-vk-auth` or `npm i react-vk-auth`
+`yarn add react-vk-auth-window` or `npm i react-vk-auth-window`
 
 ## Пример использования готовой кнопки
 
