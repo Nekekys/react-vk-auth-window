@@ -58,4 +58,4 @@ function App() {
 
 ```
 
-параметр `apiId` - токен для работы с приложениями <a href="https://vk.com/apps?act=manage">vk api</a> 
+параметр `vkId` - токен для работы с приложениями <a href="https://vk.com/apps?act=manage">vk api</a> 
