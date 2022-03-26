@@ -1,6 +1,6 @@
 {
   "name": "react-vk-auth-window",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "react component for vk.com authorization in new window",
   "main": "build/index.js",
   "repository": {

@@ -47,7 +47,7 @@ function VKAuthButton({vkId, callBack, children}) {
 
     const mainHandler = () => {
         const vk = window.open(
-            `https://oauth.vk.com/authorize?client_id=${vkId}&redirect_uri=${window.location.href}&scope=22&display=page&response_type=token`,
+            `https://oauth.vk.com/authorize?client_id=${vkId}&redirect_uri=${window.location.href}&scope=+4194304&display=page&response_type=token`,
             'caption',
             'resizable=1,width=700,height=500',
             true
