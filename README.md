@@ -1,33 +1,61 @@
-# react-vk-auth
+# react-vk-auth-window
 
-> A Component React for vk.com authentication
-
-[![volkswagen status](https://auchenberg.github.io/volkswagen/volkswargen_ci.svg?v=1)](https://github.com/auchenberg/volkswagen)
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+> Component React для авторизации в vk
 
 
 ## Getting Started
 
-`yarn add react-vk-auth` or `npm i react-vk-auth`
+`yarn add react-vk-auth-window` or `npm i react-vk-auth-window`
 
-## Basic example
+## Пример использования готовой кнопки
 
 ```js
-import React, { Component } from 'react';
-import VkAuth from 'react-vk-auth';
+import React from 'react';
+import VKAuthButton from 'react-vk-auth-window'
 
-class Registration extends Component {
+function App() {
 
-  handleVkResponse = (data) => {
-    console.warn(data)
+  const testFun = (data) =>{
+       console.log(data)
   }
   
-  render() {
-    return(
-      <VkAuth apiId="#######" callback={this.handleVkResponse} />
-    )
-  }
+
+  return(
+      <div>
+        <VKAuthButton vkId="#####" callBack={testFun} />
+        <VKAuthButton vkId="#####" callBack={testFun} >Lorem text</VKAuthButton>
+      </div>
+  )
+  
 }
 
 ```
-param `apiId` is required, appId is your vk.com dev token.
+
+## Пример кнопки с возможной кастомизацией
+
+```js
+import React from 'react';
+import {VKAuthButtonCustom} from 'react-vk-auth-window'
+
+function App() {
+
+  const testFun = (data) =>{
+       console.log(data)
+  }
+  
+
+  return(
+      <div>
+        <VKAuthButtonCustom vkId="#####" callBack={testFun}>
+          <div>
+            <button>213</button>
+          </div>
+        </VKAuthButtonCustom>
+      </div>
+  )
+  
+}
+
+```
+
+параметр `vkId` - токен для работы с приложениями <a href="https://vk.com/apps?act=manage">vk api</a> 

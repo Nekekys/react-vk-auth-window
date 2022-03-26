@@ -47,7 +47,7 @@ function VKAuthButton({vkId, callBack, children}) {
 
     const mainHandler = () => {
         const vk = window.open(
-            `https://oauth.vk.com/authorize?client_id=${vkId}&redirect_uri=${window.location.href}&scope=12&display=page&response_type=token`,
+            `https://oauth.vk.com/authorize?client_id=${vkId}&redirect_uri=${window.location.href}&scope=22&display=page&response_type=token`,
             'caption',
             'resizable=1,width=700,height=500',
             true
@@ -87,6 +87,7 @@ function VKAuthButton({vkId, callBack, children}) {
             style={{
                 display: 'flex',
                 backgroundColor: '#0077FF',
+                color: '#fff',
                 alignItems: 'center',
                 padding: '8px 20px',
                 borderRadius: '5px',
