@@ -73,6 +73,8 @@ function VKAuthButton({vkId, callBack, children}) {
                     if (objMain.access_token) {
                         callBack(objMain);
                         vk.close();
+                    }else{
+                        vk.close();
                     }
                 }
             }
